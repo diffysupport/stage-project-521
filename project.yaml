@@ -53,14 +53,14 @@ basic:
         compare_with_fresh: production
 advanced:
     mask: ''
-    remove: further-embedded-vsa
+    remove: ''
     delay: 15
     scroll: true
     headers:
         - { value: '', header: '' }
     cookies: ''
     custom_js: ''
-    custom_css: ''
+    custom_css: "further-embedded-vsa {\n\tdisplay: none !important;\n}"
     mock_content:
         - { type: title, selector: '' }
     sensitivity: 15
