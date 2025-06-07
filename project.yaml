@@ -1,0 +1,80 @@
+basic:
+    name: 'https://www.thecarrington.com'
+    environments:
+        production: 'https://www.thecarrington.com'
+        staging: ''
+        development: ''
+    basicAuth:
+        production: { user: '', password: '' }
+        staging: { user: '', password: '' }
+        development: null
+    breakpoints:
+        - 640
+        - 760
+        - 768
+        - 1024
+        - 1080
+        - 1200
+        - 1440
+        - 1920
+    pages:
+        - /
+        - /resources/retirement-workbook
+        - /independent-living
+        - /independent-living/amenities-services
+        - /independent-living/floor-plans
+        - /independent-living/brochure
+        - /assisted-living-2
+        - /assisted-living-2/amenities-services
+        - /tessera-memory-care/mezzanine
+        - /assisted-living-2/floor-plans
+        - /assisted-living-2/brochure
+        - /tessera-memory-care
+        - /tessera-memory-care/amenities-services
+        - /tessera-memory-care/floor-plans
+        - /tessera-memory-care/brochure
+        - /resources
+        - /resources/compare-costs
+        - /resources/moving-station
+        - /resources/faqs
+        - /senior-living-blog
+        - /events
+        - /about-us
+        - /about-us/photo-gallery
+        - /about-us/video-gallery
+        - /about-us/testimonials
+        - /contact-us
+        - /senior-living-careers
+        - /senior-living-blog/assisted-living-vs-memory-care
+        - /senior-living-blog/truth-about-senior-living
+        - /senior-living-blog/upside-downsizing-in-retirement
+        - /assisted-living
+        - /privacy-policy
+    monitoring:
+        days: {  }
+        type: daily
+        schedule_time: '12:30 AM'
+        schedule_time_zone: Europe/London
+        compare_with: last-production
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: ''
+    delay: 15
+    scroll: true
+    headers:
+        - { header: '', value: '' }
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content: ''
+    sensitivity: 15
+    night_mode: false
+    retina_images: false
+    single_ip: false
+    performance:
+        workers_production: 30
+        workers_nonproduction: 10
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: true
